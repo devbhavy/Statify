@@ -2,7 +2,7 @@ import { authClient } from "@/lib/auth-client"
 import Logo from "../assets/Logo.png"
 import { RainbowButton } from "./ui/rainbow-button"
 import TiltedCard from "./ui/TiltedCard"
-import { useNavigate } from "react-router"
+
 
 
 
@@ -19,7 +19,7 @@ export function LandingNavbar({data} : {data : any}){
         })
     
     }
-    const navigate = useNavigate();
+    
     
 
     return (
