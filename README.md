@@ -1,73 +1,85 @@
-# React + TypeScript + Vite
+<p align="center">
+  <img src="src/assets/Logo.png" alt="Statify Logo" width="200"/>
+</p>
+<p align="center">
+  <h1>Statify</h1>
+  A web app for AI-powered music taste analysis and dynamic dashboards.
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/License-No%20License-red.svg?style=for-the-badge" alt="License"/>
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
+  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React"/>
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite"/>
+  <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white" alt="npm"/>
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+Statify is a Spotify Wrapped-inspired web application designed for AI-driven music taste analysis, presenting personalized insights through dynamic dashboards.
 
-Currently, two official plugins are available:
+## ✨ Features
+*   Spotify Wrapped-inspired music taste summaries.
+*   AI-driven analysis of user music preferences.
+*   Interactive and dynamic data dashboards.
+*   Personalized visualization of music consumption data.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Installation
 
-## React Compiler
+To set up and run Statify locally, follow these steps:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-username/Statify.git
+    ```
+2.  **Navigate into the project directory:**
+    ```bash
+    cd Statify
+    ```
+3.  **Install dependencies using npm:**
+    ```bash
+    npm install
+    ```
+4.  **Start the development server:**
+    ```bash
+    npm run dev
+    ```
+    The application will typically be accessible at `http://localhost:5173`.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
+*   **Languages:** TypeScript, CSS, JavaScript, HTML
+*   **Frameworks/Libraries:** React, Vite
+*   **Package Manager:** npm
+*   **Tools:** ESLint
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📂 Project Structure
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+Statify/
+├── public/
+│   └── vite.svg
+├── src/
+│   ├── assets/
+│   │   ├── Dashboard.png
+│   │   └── Logo.png
+│   ├── components/
+│   │   ├── ui/
+│   │   │   ├── aurora-text.tsx
+│   │   │   ├── button.tsx
+│   │   │   └── ... (additional UI components)
+│   │   ├── Card1.tsx
+│   │   ├── DashboardNavbar.tsx
+│   │   └── ... (additional components)
+│   ├── lib/
+│   │   ├── auth-client.ts
+│   │   └── utils.ts
+│   ├── pages/
+│   │   ├── Dashboard.tsx
+│   │   └── Landing.tsx
+│   ├── App.css
+│   ├── App.tsx
+│   ├── index.css
+│   └── main.tsx
+└── index.html
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📄 License
+No license specified.
